@@ -9,26 +9,27 @@ $(document).ready(function() {
     var finalScore = (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFour)
     var inputName = $("input#name").val();
 
-    if (finalScore >= 5 && finalScore <= 9 ) {
+      if (finalScore >= 5 && finalScore <= 9) {
       $("#ruby").show();
       $("#css").hide();
       $("#csharp").hide();
+      $(".name").text(inputName);
     } else if (finalScore >= 10 && finalScore <= 12) {
       $("#css").show();
       $("#ruby").hide();
       $("#csharp").hide();
+      $(".name").text(inputName);
     } else if (finalScore >= 13 && finalScore <= 15) {
       $("#css").hide();
       $("#ruby").hide();
       $("#csharp").show();
+      $(".name").text(inputName);
     } else {
       $("#css").hide();
       $("#ruby").hide();
       $("#csharp").hide();
-      alert("Please answer all the questions");
+      alert("Error: Please answer all the questions");
     }
-
-    $(".name").text(inputName);
     event.preventDefault();
   });
 });

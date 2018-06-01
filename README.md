@@ -20,7 +20,7 @@ This is a simple website to demonstrate css, javascript, jquery, and html skills
 * bootstrap
 
 # GH-pages
-https://bettsbp.github.io/track-suggester/
+https://bettsbp.github.io/track-suggester/ _not functioning this week_
 
 # Legal
 Copyright (c) 2018 Brandon Betts All Rights Reserved.

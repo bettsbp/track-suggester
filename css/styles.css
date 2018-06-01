@@ -2,20 +2,16 @@ body {
   background-image: url("../img/epicodus1.jpeg");
   font-family: verdana;
 }
-
 form {
   padding: 5px;
   margin: 5px;
 }
-
 label {
   padding: 5px;
 }
-
 #ruby, #css, #csharp {
   display: none;
 }
-
 h5 {
   font-weight: bold;
 }

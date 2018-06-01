@@ -6,13 +6,25 @@ $(document).ready(function() {
     var scoreThree = parseInt($("input:radio[name=track3]:checked").val());
     var scoreFour = parseInt($("input:radio[name=track4]:checked").val());
     var scoreFive = parseInt($("input:radio[name=track5]:checked").val());
+    var finalScore = (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFour)
 
-    if (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive <= 5) {
-      ("#ruby").show();
-      ("#css").hide();
-    } else if (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive >= 6 ){
-      ("#css").show();
-      ("ruby").hide();
+    if (finalScore >= 5 && finalScore <= 9 ) {
+      $("#ruby").show();
+      $("#css").hide();
+      $("#csharp").hide();
+    } else if (finalScore >= 10 && finalScore <= 12) {
+      $("#css").show();
+      $("#ruby").hide();
+      $("#csharp").hide();
+    } else if (finalScore >= 13 && finalScore <= 15) {
+      $("#css").hide();
+      $("#ruby").hide();
+      $("#csharp").show();
+    } else {
+      $("#css").hide();
+      $("#ruby").hide();
+      $("#csharp").hide();
+      alert("Please answer all the questions");
     }
 
     event.preventDefault();

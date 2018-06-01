@@ -7,6 +7,7 @@ $(document).ready(function() {
     var scoreFour = parseInt($("input:radio[name=track4]:checked").val());
     var scoreFive = parseInt($("input:radio[name=track5]:checked").val());
     var finalScore = (scoreOne + scoreTwo + scoreThree + scoreFour + scoreFour)
+    var inputName = $("input#name").val();
 
     if (finalScore >= 5 && finalScore <= 9 ) {
       $("#ruby").show();
@@ -27,6 +28,7 @@ $(document).ready(function() {
       alert("Please answer all the questions");
     }
 
+    $(".name").text(inputName);
     event.preventDefault();
   });
 });

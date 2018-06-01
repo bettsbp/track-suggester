@@ -114,17 +114,21 @@
             I hate it
           </label>
         </div>
+        <div class="form-group">
+            <label for="name">Your name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
         <button type="submit" class="btn btn-success">Which track for me?</button>
       </form>
       <div class="well well-sm">
         <div id="ruby">
-          <h1>You should take the Ruby track</h1>
+          <h1><span class="name"></span>, you chose mostly Ruby related answers, you should take Ruby!</h1>
         </div>
         <div id="css">
-          <h1>You should take CSS classes</h1>
+          <h1><span class="name"></span>, you seem very artistic and creativity driven, you should take CSS!</h1>
         </div>
         <div id="csharp">
-          <h1>You should take C#</h1>
+          <h1><span class="name"></span>, you seem invested in backend programming and data manipulation, you should take C#!</h1>
       </div>
       </well>
     </div>
